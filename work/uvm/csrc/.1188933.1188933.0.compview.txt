@@ -1,0 +1,13 @@
+{"vcs1":{"timestamp_begin":1754696649.740944834, "rt":3.15, "ut":3.92, "st":0.20}}
+{"vcselab":{"timestamp_begin":1754696652.918188767, "rt":0.13, "ut":0.09, "st":0.02}}
+{"link":{"timestamp_begin":1754696653.072383133, "rt":0.10, "ut":0.13, "st":0.06}}
+{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1754696649.523627126}
+{"VCS_COMP_START_TIME": 1754696649.523627126}
+{"VCS_COMP_END_TIME": 1754696653.221133570}
+{"VCS_USER_OPTIONS": "-full64 -sverilog -ntb_opts uvm-1.2 -lca -debug_access+all -kdb -timescale=1ps/100fs -F /home/enrique.namigtle/Proyectos_UVM/Comparador_RNM_UVM/verification/uvm/comparador_rnm_uvc.f /home/enrique.namigtle/Proyectos_UVM/Comparador_RNM_UVM/rtl/comparador_rnm.sv -F /home/enrique.namigtle/Proyectos_UVM/Comparador_RNM_UVM/verification/uvm/sve.f -top tb -j8 +define+GIT_DIR="/home/enrique.namigtle/Proyectos_UVM/Comparador_RNM_UVM/verification/uvm""}
+{"vcs1": {"peak_mem": 495716}}
+{"vcs1": {"peak_mem": 511356}}
+{"vcs1": {"peak_mem": 527940}}
+{"vcs1": {"peak_mem": 528476}}
+{"vcs1": {"peak_mem": 538736}}
+{"vcselab": {"peak_mem": 254528}}

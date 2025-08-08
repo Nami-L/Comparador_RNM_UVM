@@ -1,0 +1,26 @@
+<session version="1.1" release="U-2023.03-SP2-9" timestp="2025-08-08 23:42:47 GMT">
+  <info>
+    <attr name="datetime" value="Fri Aug  8 17:43:01 2025
+"/>
+    <attr name="command" value="urg -dir simv.vdb -format both -log /home/enrique.namigtle/Proyectos_UVM/Comparador_RNM_UVM/work/uvm/logs/cov.log -report /home/enrique.namigtle/Proyectos_UVM/Comparador_RNM_UVM/work/uvm/coverage"/>
+  </info>
+  <hvp>
+    <datadef>
+      <metdef name="Group" type="percent" aggregator="average" builtin="1" />
+    </datadef>
+  </hvp>
+  <old_coverage>
+  <scope type="top" name="top">
+    <metric name="Group" value="100%" />
+  </scope>
+  <scope type="instance" name="top">
+  </scope>
+  <scope type="group" name="top">
+    <scope type="group" name="top_env_pkg::top_coverage::m_cov">
+      <metric name="Group" value="100%" />
+    </scope>
+  </scope>
+  <scope type="assert" name="Statistics">
+  </scope>
+  </old_coverage>
+</session>

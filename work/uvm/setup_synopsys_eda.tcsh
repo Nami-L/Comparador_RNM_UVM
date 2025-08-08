@@ -1,0 +1,1 @@
+/home/enrique.namigtle/Proyectos_UVM/Comparador_RNM_UVM/verification/uvm/scripts/setup/setup_synopsys_eda.tcsh

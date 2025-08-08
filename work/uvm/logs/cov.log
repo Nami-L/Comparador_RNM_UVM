@@ -1,0 +1,9 @@
+Command: urg -dir simv.vdb -format both -log /home/enrique.namigtle/Proyectos_UVM/Comparador_RNM_UVM/work/uvm/logs/cov.log -report /home/enrique.namigtle/Proyectos_UVM/Comparador_RNM_UVM/work/uvm/coverage
+Date: Fri Aug  8 17:43:01 2025
+
+URG Version U-2023.03-SP2-9 Copyright (c) 1991-2023 by Synopsys Inc.
+
+Note-[URG-RDG] Report directory generated
+  Report written to directory 
+  /home/enrique.namigtle/Proyectos_UVM/Comparador_RNM_UVM/work/uvm/coverage
+
