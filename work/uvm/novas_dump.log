@@ -93,7 +93,7 @@ VCS compile option:
  option[2]: +UVM_TESTNAME=top_test
  option[3]: +UVM_VERBOSITY=UVM_DEBUG
  option[4]: -l
- option[5]: /home/enrique.namigtle/Proyectos_UVM/Comparador_RNM_UVM/work/uvm/logs/2025-08-08_17-53-17_simv.log
+ option[5]: /home/enrique.namigtle/Proyectos_UVM/Comparador_RNM_UVM/work/uvm/logs/2025-08-08_18-21-55_simv.log
  option[6]: +UVM_TR_RECORD
  option[7]: +UVM_LOG_RECORD
  option[8]: +UVM_NO_RELNOTES
@@ -293,7 +293,7 @@ argv[1]=+ntb_random_seed=1
 argv[2]=+UVM_TESTNAME=top_test
 argv[3]=+UVM_VERBOSITY=UVM_DEBUG
 argv[4]=-l
-argv[5]=/home/enrique.namigtle/Proyectos_UVM/Comparador_RNM_UVM/work/uvm/logs/2025-08-08_17-53-17_simv.log
+argv[5]=/home/enrique.namigtle/Proyectos_UVM/Comparador_RNM_UVM/work/uvm/logs/2025-08-08_18-21-55_simv.log
 argv[6]=+UVM_TR_RECORD
 argv[7]=+UVM_LOG_RECORD
 argv[8]=+UVM_NO_RELNOTES
@@ -302,8 +302,8 @@ argv[10]=-ucli
 argv[11]=-do
 argv[12]=/home/enrique.namigtle/Proyectos_UVM/Comparador_RNM_UVM/verification/uvm/run.tcl
 301 profile - 100
-          CPU/Mem usage: 0.020 sys,  0.130 user,  428.69M mem
-302 Elapsed time:    0:00:00    Fri Aug  8 17:53:20 2025
+          CPU/Mem usage: 0.020 sys,  0.130 user,  432.98M mem
+302 Elapsed time:    0:00:00    Fri Aug  8 18:21:58 2025
 303 User CPU time used: 0 seconds
 304 System CPU time used: 0 seconds
 305 pliAppInit
@@ -333,20 +333,20 @@ argv[12]=/home/enrique.namigtle/Proyectos_UVM/Comparador_RNM_UVM/verification/uv
 329 *Verdi* : Enable +trace_process and +all dumping.
 330 *Verdi* : End of traversing.
 331 pliAppHDL_DumpVarComplete traverse var: profile - 
-          CPU/Mem usage: 0.020 sys,  0.130 user,  526.16M mem
-                   incr: 0.000 sys,  0.000 user,  5.09M mem
-                   accu: 0.000 sys,  0.000 user,  5.09M mem
-              accu incr: 0.000 sys,  0.000 user,  5.09M mem
+          CPU/Mem usage: 0.020 sys,  0.130 user,  530.44M mem
+                   incr: 0.000 sys,  0.000 user,  5.08M mem
+                   accu: 0.000 sys,  0.000 user,  5.08M mem
+              accu incr: 0.000 sys,  0.000 user,  5.08M mem
 
           Count usage: 12 var,  12 idcode,  12 callback
                  incr: 12 var,  12 idcode,  12 callback
                  accu: 12 var,  12 idcode,  12 callback
             accu incr: 12 var,  12 idcode,  12 callback
-332 Elapsed time:    0:00:00    Fri Aug  8 17:53:20 2025
+332 Elapsed time:    0:00:00    Fri Aug  8 18:21:58 2025
 333 User CPU time used: 0 seconds
 334 System CPU time used: 0 seconds
 335 pliAppHDL_DumpVarComplete: profile - 
-          CPU/Mem usage: 0.020 sys,  0.130 user,  527.21M mem
+          CPU/Mem usage: 0.020 sys,  0.130 user,  531.50M mem
                    incr: 0.000 sys,  0.000 user,  1.05M mem
                    accu: 0.000 sys,  0.000 user,  6.14M mem
               accu incr: 0.000 sys,  0.000 user,  1.05M mem
@@ -355,33 +355,33 @@ argv[12]=/home/enrique.namigtle/Proyectos_UVM/Comparador_RNM_UVM/verification/uv
                  incr: 0 var,  0 idcode,  0 callback
                  accu: 12 var,  12 idcode,  12 callback
             accu incr: 0 var,  0 idcode,  0 callback
-336 Elapsed time:    0:00:00    Fri Aug  8 17:53:20 2025
+336 Elapsed time:    0:00:00    Fri Aug  8 18:21:58 2025
 337 User CPU time used: 0 seconds
 338 System CPU time used: 0 seconds
 339 End of simulation at 1450000
-340 Memory usage: 535.761 M
-341 Maximum resident set size: 176 MB
+340 Memory usage: 540.049 M
+341 Maximum resident set size: 177 MB
 342 Hard page faults: 1
-343 Soft page faults: 18493
-344 Elapsed time:    0:00:00    Fri Aug  8 17:53:20 2025
+343 Soft page faults: 18679
+344 Elapsed time:    0:00:01    Fri Aug  8 18:21:59 2025
 345 User CPU time used: 0 seconds
 346 System CPU time used: 0 seconds
 347 Begin FSDB profile info:
-348 FSDB Writer : bc1(86) bcn(672) mtf/stf(0/0)
-FSDB Writer elapsed time : flush(0.007547) io wait(0.000000) theadpool wait(0.000000)
+348 FSDB Writer : bc1(62) bcn(705) mtf/stf(0/0)
+FSDB Writer elapsed time : flush(0.008395) io wait(0.000000) theadpool wait(0.000000)
 FSDB Writer cpu time : MT Compression : 0
 349 End FSDB profile info
-350 FSDB closed. Name: novas.fsdb Size: 23768
+350 FSDB closed. Name: novas.fsdb Size: 23795
 351 Parallel profile     - ProducerThread:1 ConsumerThread:1 Buffer:64MB
-352                      - BlockUsed:1 Acquire:0 BufferUsed:60862
+352                      - BlockUsed:1 Acquire:0 BufferUsed:61159
 353                      - Flush:4 Expand:0 ProducerWait:0 ConsumerWait:0
-354                      - MainProducerTime:0.226630747 TotalConsumerTime:0.000000000
-355                      - ElapsedTime:0.095569000
-356 Producer   0 profile - BlockUsed:3 Acquire:0 BufferUsed:60862
+354                      - MainProducerTime:0.226466175 TotalConsumerTime:0.000000000
+355                      - ElapsedTime:0.095560000
+356 Producer   0 profile - BlockUsed:2 Acquire:0 BufferUsed:61159
 357 Consumer   0 profile - Affinity:-1 CPUTime:0.000000000 LifeTime:0.000000000 (-nan%)
-358                      - BlockUsed:3 Acquire:0 BufferUsed:60862
+358                      - BlockUsed:2 Acquire:0 BufferUsed:61159
 359 SimExit
-360 Elapsed time:    0:00:00    Fri Aug  8 17:53:20 2025
+360 Elapsed time:    0:00:01    Fri Aug  8 18:21:59 2025
 361 User CPU time used: 0 seconds
 362 System CPU time used: 0 seconds
 363 Sim process exit

@@ -5,10 +5,10 @@ interface comparador_rnm_uvc_if (input logic clk_i);
 
 
 
- logic p_i;
- logic n_i;
+ real p_i;
+ real n_i;
 
- logic  c_o;
+ real  c_o;
 
 
 

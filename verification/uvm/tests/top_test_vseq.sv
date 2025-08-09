@@ -28,8 +28,8 @@ task top_test_vseq::comparador_rnm_rand_seq();
         // creado dentro de tu clase comparador_rnm_uvc_sequence_base
 
         //el objeto es m_name y accedemos al item
-        m_trans.m_p_i inside {[0 : 1]};
-        m_trans.m_n_i inside {[0 : 1]};
+        m_trans.m_p_i inside {[0 : 10]};
+        m_trans.m_n_i inside {[0 : 10]};
 
 
       }))

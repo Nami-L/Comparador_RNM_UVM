@@ -53,28 +53,34 @@
         "module",
         9
     ],
+    "comparador_rnm": [
+        "comparador_rnm",
+        "yhJAP",
+        "module",
+        14
+    ],
     "top_env_pkg": [
         "top_env_pkg",
         "FHvMB",
         "module",
-        11
+        10
     ],
     "top_test_pkg": [
         "top_test_pkg",
         "tENmG",
         "module",
-        12
+        11
     ],
     "tb": [
         "tb",
         "g7hgQ",
         "module",
-        13
+        12
     ],
     "...MASTER...": [
         "SIM",
         "amcQw",
         "module",
-        14
+        13
     ]
 }

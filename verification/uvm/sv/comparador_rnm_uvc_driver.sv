@@ -47,8 +47,8 @@ task comparador_rnm_uvc_driver::do_drive();
 
   `uvm_info(get_type_name(), {"\n ------ DRIVER (comparador_rnm UVC) ------", req.convert2string()}, UVM_DEBUG)
 
-  vif.cb_drv.p_i  <=  req.m_p_i;
-  vif.cb_drv.n_i  <=  req.m_n_i;
+  vif.cb_drv.p_i  <=  req.m_p_i_real;
+  vif.cb_drv.n_i  <=  req.m_n_i_real;
 
 endtask: do_drive
 

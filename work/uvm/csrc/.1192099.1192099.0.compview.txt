@@ -1,5 +1,0 @@
-{"vcs1":{"timestamp_begin":1754697173.663071706, "rt":0.07, "ut":0.02, "st":0.01}}
-{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1754697173.448477465}
-{"VCS_COMP_START_TIME": 1754697173.448477465}
-{"VCS_COMP_END_TIME": 1754697173.747556549}
-{"VCS_USER_OPTIONS": "-full64 -sverilog -ntb_opts uvm-1.2 -lca -debug_access+all -kdb -timescale=1ps/100fs -F /home/enrique.namigtle/Proyectos_UVM/Comparador_RNM_UVM/verification/uvm/comparador_rnm_uvc.f /home/enrique.namigtle/Proyectos_UVM/Comparador_RNM_UVM/rtl/comparador_rnm.sv -F /home/enrique.namigtle/Proyectos_UVM/Comparador_RNM_UVM/verification/uvm/sve.f -top tb -j8 +define+GIT_DIR="/home/enrique.namigtle/Proyectos_UVM/Comparador_RNM_UVM/verification/uvm""}
