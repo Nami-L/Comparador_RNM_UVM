@@ -1,1 +1,0 @@
-/home/enrique.namigtle/Proyectos_UVM/Comparador_RNM_UVM/verification/uvm/scripts/makefiles/Makefile.vcs
