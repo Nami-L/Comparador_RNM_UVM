@@ -1,31 +1,33 @@
 `ifndef COMPARADOR_RNM_UVC_IF_SV
 `define COMPARADOR_RNM_UVC_IF_SV
 
-interface comparador_rnm_uvc_if (input logic clk_i);
+interface comparador_rnm_uvc_if (
+    input logic clk_i
+);
 
 
 
- real p_i;
- real n_i;
+  real p_i;
+  real n_i;
 
- real  c_o;
-
-
-
-//INICIALIZAR VALORES
-initial begin
-
-p_i = 'd0;
-n_i = 'd0;
+  real c_o;
 
 
-end
+
+  //INICIALIZAR VALORES
+  initial begin
+
+    p_i = 0;
+    n_i = 0;
 
 
-clocking cb_drv @(posedge clk_i);
+  end
+
+
+  clocking cb_drv @(posedge clk_i);
     default input #1ns output #1ns;
     output p_i;
-output n_i;
+    output n_i;
 
 
   endclocking : cb_drv
@@ -39,6 +41,6 @@ output n_i;
   endclocking : cb_mon
 
 
-endinterface: comparador_rnm_uvc_if
+endinterface : comparador_rnm_uvc_if
 
-`endif // COMPARADOR_RNM_UVC_IF_SV
+`endif  // COMPARADOR_RNM_UVC_IF_SV

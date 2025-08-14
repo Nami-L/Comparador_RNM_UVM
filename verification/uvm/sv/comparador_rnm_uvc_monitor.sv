@@ -5,17 +5,17 @@ class comparador_rnm_uvc_monitor extends uvm_monitor;
 
   `uvm_component_utils(comparador_rnm_uvc_monitor)
 
-  uvm_analysis_port #(comparador_rnm_uvc_sequence_item)       analysis_port;
+  uvm_analysis_port #(comparador_rnm_uvc_sequence_item) analysis_port;
 
-  virtual comparador_rnm_uvc_if                               vif;
-  comparador_rnm_uvc_config                                   m_config;
-  comparador_rnm_uvc_sequence_item                            m_trans;
+  virtual comparador_rnm_uvc_if                         vif;
+  comparador_rnm_uvc_config                             m_config;
+  comparador_rnm_uvc_sequence_item                      m_trans;
 
   //VARIABLES AUXILIARES PARA LAS SALIDAS
 
-  logic tem_p;
-  logic tem_n;
-  logic tem_c;
+  logic                                                 tem_p;
+  logic                                                 tem_n;
+  logic                                                 tem_c;
 
 
 
@@ -55,25 +55,27 @@ task comparador_rnm_uvc_monitor::do_mon();
 
 
   forever begin
- 
+
     tem_p = vif.p_i;
     tem_n = vif.n_i;
     tem_c = vif.c_o;
 
-  @(vif.cb_drv);
+    @(vif.cb_drv);
 
-     if ((tem_p != vif.p_i) || (tem_n != vif.n_i) || (tem_c != vif.c_o)) begin
+    if ((tem_p != vif.p_i) || (tem_n != vif.n_i) || (tem_c != vif.c_o)) begin
 
       m_trans.m_p_i_real = vif.p_i;
       m_trans.m_n_i_real = vif.n_i;
       m_trans.m_c_o_real = vif.c_o;
+
+      m_trans.m_c_o = int'(vif.c_o);
 
       `uvm_info(get_type_name(), {"\n ------ MONITOR (GPIO UVC) ------ ", m_trans.convert2string()
                 }, UVM_DEBUG)
       //manda la transaction hacia el siguiente componente
       analysis_port.write(m_trans);
 
-  end
+    end
 
   end
 endtask : do_mon

@@ -8,7 +8,7 @@ class top_test_vseq extends uvm_sequence;
 
   extern function new(string name = "");
 
-  extern task comparador_rnm_rand_seq();
+      extern task comparador_rnm_rand_seq();
   extern task body();
 
 endclass : top_test_vseq
@@ -43,7 +43,7 @@ task top_test_vseq::body();
   // Initial delay
   #(50ns);
 
-  repeat (5) begin
+  repeat (50) begin
     comparador_rnm_rand_seq();
   end
 

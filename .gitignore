@@ -4,6 +4,7 @@ work/
 
 # Files
 Makefile
+makefiles
 *.exe
 *.o
 *.pdf
