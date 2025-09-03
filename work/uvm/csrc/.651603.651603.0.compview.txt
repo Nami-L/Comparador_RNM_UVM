@@ -1,0 +1,7 @@
+Command exited with non-zero status 255
+{"vcs1":{"timestamp_begin":1756928411.487530099, "rt":0.44, "ut":0.48, "st":0.06}}
+{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1756928411.267198435}
+{"VCS_COMP_START_TIME": 1756928411.267198435}
+{"VCS_COMP_END_TIME": 1756928411.951244369}
+{"VCS_USER_OPTIONS": "-full64 -sverilog -ntb_opts uvm-1.2 -lca -debug_access+all -kdb -timescale=1ps/100fs -F /home/enrique.namigtle/SYNOPSYS_TSMC180GP/Proyectos_UVM/Comparador_RNM_UVM/verification/uvm/comparador_rnm_uvc.f /home/enrique.namigtle/SYNOPSYS_TSMC180GP/Proyectos_UVM/Comparador_RNM_UVM/rtl/comparador_rnm.sv -F /home/enrique.namigtle/SYNOPSYS_TSMC180GP/Proyectos_UVM/Comparador_RNM_UVM/verification/uvm/sve.f -top tb -j8 +define+GIT_DIR="/home/enrique.namigtle/SYNOPSYS_TSMC180GP/Proyectos_UVM/Comparador_RNM_UVM/verification/uvm""}
+{"vcs1": {"peak_mem": 538472}}

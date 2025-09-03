@@ -14,7 +14,16 @@ make compile
 make elaborate
 make sim  #Solo ver mensajes
 make verdi  # abrir la interfaz grafica
+
+
+
 ### For tcsh
+
+Recordar que primero debemos colocar las variables de entorno, en este caso para Synopsys es
+
+- chs
+- cd Carpeta Synopsys
+- source .cds
 
 ```bash
 setenv GIT_ROOT `git rev-parse --show-toplevel`
