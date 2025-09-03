@@ -1,3 +1,0 @@
-Command Line: /home/EDA/CDS/SYNOPSYS/verdi/U-2023.03-SP2-9/platform/LINUXAMD64/bin/Novas -ssf novas.fsdb -dbdir simv.daidir -nologo -q
-uname(Linux sici4 4.18.0-553.53.1.el8_10.x86_64 #1 SMP Fri May 9 17:36:31 EDT 2025 x86_64)
-au time 74.695074 0.005610 0.010599 delta 14921728 14921728 total 611139584 611139584

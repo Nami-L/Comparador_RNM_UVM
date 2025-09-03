@@ -1,0 +1,11 @@
+ 
+# Directories
+work/
+
+# Files
+#Makefile
+#Makefile
+*.exe
+*.o
+*.pdf
+*.vcs
