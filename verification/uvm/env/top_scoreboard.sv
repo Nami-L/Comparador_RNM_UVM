@@ -55,14 +55,15 @@ task top_scoreboard::run_phase(uvm_phase phase);
       // utilizo esa variable para comprobar que es igual a mi salida tambien guardado
       if ((valor_experado === m_comparador_rnm_queue[i].m_c_o)) begin
         m_num_passed++;
-       // `uvm_info(get_type_name(), $sformatf("PASS:  (m_p_i=%0b, m_n_i=%0d)",
-       //                                            m_comparador_rnm_queue[i].m_p_i,
-       //                                            m_comparador_rnm_queue[i].m_n_i), UVM_LOW)
+        `uvm_info(get_type_name(), $sformatf("PASS:  (m_p_i=%0b, m_n_i=%0d, m_n_c_o=%0d)",
+                                                   m_comparador_rnm_queue[i].m_p_i,
+                                                   m_comparador_rnm_queue[i].m_n_i,
+                                                   m_comparador_rnm_queue[i].m_c_o), UVM_LOW)
       end else begin
         m_num_failed++;
-       //         `uvm_info(get_type_name(), $sformatf("FAIL:  (m_p_i=%0b, m_n_i=%0d)",
-       //                                            m_comparador_rnm_queue[i].m_p_i,
-       //                                            m_comparador_rnm_queue[i].m_n_i), UVM_LOW)
+                `uvm_info(get_type_name(), $sformatf("FAIL:  (m_p_i=%0b, m_n_i=%0d)",
+                                                   m_comparador_rnm_queue[i].m_p_i,
+                                                   m_comparador_rnm_queue[i].m_n_i), UVM_LOW)
       end
 
       end
