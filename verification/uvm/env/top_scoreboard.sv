@@ -50,7 +50,7 @@ task top_scoreboard::run_phase(uvm_phase phase);
 
         //Modelo de referencia: Comparo los valores guardados para p y n en una nueva variable
 
-        bit valor_experado = ((m_comparador_rnm_queue[i].m_p_i >  m_comparador_rnm_queue[i].m_n_i) ? 1'b1: 1'b0);
+        bit valor_experado = ((m_comparador_rnm_queue[i].m_p_i >=  m_comparador_rnm_queue[i].m_n_i) ? 1'b1: 1'b0);
 
       // utilizo esa variable para comprobar que es igual a mi salida tambien guardado
       if ((valor_experado === m_comparador_rnm_queue[i].m_c_o)) begin

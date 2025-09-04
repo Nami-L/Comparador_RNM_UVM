@@ -43,7 +43,7 @@ task top_test_vseq::body();
   // Initial delay
   #(50ns);
 
-  repeat (5) begin
+  repeat (50) begin
     comparador_rnm_rand_seq();
   end
 

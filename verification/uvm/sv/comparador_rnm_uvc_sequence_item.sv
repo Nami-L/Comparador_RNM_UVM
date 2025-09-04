@@ -16,7 +16,7 @@ rand int m_n_i;
 
   // Readout variables
 
-  logic m_c_o;
+  real m_c_o;
 
 
   extern function new(string name = "");

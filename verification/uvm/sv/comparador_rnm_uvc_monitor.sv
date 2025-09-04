@@ -16,7 +16,7 @@ class comparador_rnm_uvc_monitor extends uvm_monitor;
   logic tem_p;
   logic tem_n;
   logic tem_c;
-
+  bit c_int;
 
 
 
@@ -60,6 +60,7 @@ task comparador_rnm_uvc_monitor::do_mon();
     tem_n = vif.n_i;
     tem_c = vif.c_o;
 
+
   @(vif.cb_drv);
 
      if ((tem_p != vif.p_i) || (tem_n != vif.n_i) || (tem_c != vif.c_o)) begin
@@ -67,6 +68,8 @@ task comparador_rnm_uvc_monitor::do_mon();
       m_trans.m_p_i = vif.p_i;
       m_trans.m_n_i = vif.n_i;
       m_trans.m_c_o = vif.c_o;
+    
+      c_int = vif.c_o > 0.5 ? 1'b1 : 1'b0; // Convertir real a logic
 
       `uvm_info(get_type_name(), {"\n ------ MONITOR (GPIO UVC) ------ ", m_trans.convert2string()
                 }, UVM_DEBUG)
