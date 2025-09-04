@@ -11,17 +11,30 @@
 // [Revisions]      -
 //=============================================================================
 
+// module comparador_rnm(
+//     input real p_i,
+//     input real n_i,
+//     output real c_o
+// );
+
+// always_comb begin
+
+
+//     c_o = (p_i >= n_i) ? 1.0 : 0.0;
+// end
+
+
+// endmodule
+
+
 module comparador_rnm(
-    input real p_i,
-    input real n_i,
-    output real c_o
+    input  real  p_i,
+    input  real  n_i,
+    output real  c_o,   // salida analógica
+    output logic c_int_o     // salida digital
 );
 
-always_comb begin
-
-
-    c_o = (p_i >= n_i) ? 1.0 : 0.0;
-end
-
+    assign c_o = (p_i >= n_i) ? 1.0 : 0.0;
+    assign c_int_o  = (p_i >= n_i) ? 1   : 0;
 
 endmodule

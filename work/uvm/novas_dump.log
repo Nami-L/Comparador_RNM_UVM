@@ -89,11 +89,11 @@ ANF: vhdi_enc_ist_get_module_id('./simv: undefined symbol: vhdi_enc_ist_get_modu
 ANF: vhdi_enc_def_get_handle_by_module_id('./simv: undefined symbol: vhdi_enc_def_get_handle_by_module_id')
 VCS compile option:
  option[0]: ./simv
- option[1]: +ntb_random_seed=3
+ option[1]: +ntb_random_seed=1123
  option[2]: +UVM_TESTNAME=top_test
  option[3]: +UVM_VERBOSITY=UVM_DEBUG
  option[4]: -l
- option[5]: /home/enrique.namigtle/SYNOPSYS_TSMC180GP/Proyectos_UVM/Comparador_RNM_UVM/work/uvm/logs/2025-09-04_02-41-34_simv.log
+ option[5]: /home/enrique.namigtle/SYNOPSYS_TSMC180GP/Proyectos_UVM/Comparador_RNM_UVM/work/uvm/logs/2025-09-04_12-38-35_simv.log
  option[6]: +UVM_TR_RECORD
  option[7]: +UVM_LOG_RECORD
  option[8]: +UVM_NO_RELNOTES
@@ -180,7 +180,7 @@ LS_COLORS=rs=0:di=38;5;33:ln=38;5;51:mh=00:pi=40;38;5;11:so=38;5;13:do=38;5;5:bd
 HOSTTYPE=x86_64-linux
 VERDI_SUPP_LIB=/home/EDA/CDS/SYNOPSYS/verdi_supp/U-2023.03-SP2-9/lib
 PYTHONHOME=/home/EDA/PDK/synopsys/TSMC180-1p6m_4X1U40KA-2fF/PycellStudio/lnx_64/plat_linux_gcc411_64/3rd
-SSH_CONNECTION=192.168.113.94 59882 192.168.73.133 22
+SSH_CONNECTION=192.168.113.94 49863 192.168.73.133 22
 SCL_LIB=/home/EDA/CDS/SYNOPSYS/scl/2024.06/lib
 PRIMEWAVE_HOME=/home/EDA/CDS/SYNOPSYS/primewave/U-2023.03-3-T-20230515
 LANG=es_MX.UTF-8
@@ -193,7 +193,7 @@ PRIME_HOME=/home/EDA/CDS/SYNOPSYS/prime/U-2022.12-SP5-5
 COLORTERM=truecolor
 SYNOPSYS_HOME=/home/EDA/CDS/SYNOPSYS
 OA_COMPILER=gcc411
-MAKE_TERMOUT=/dev/pts/11
+MAKE_TERMOUT=/dev/pts/6
 SNPSLMD_LICENSE_FILE=27020@192.168.118.26
 KDEDIRS=/usr
 VSCODE_GIT_ASKPASS_EXTRA_ARGS=
@@ -209,7 +209,7 @@ PRIME_LIB=/home/EDA/CDS/SYNOPSYS/prime/U-2022.12-SP5-5/lib
 which_declare=declare -f
 OSTYPE=linux
 INSTALLER_HOME=/home/EDA/CDS/SYNOPSYS/installer
-XDG_SESSION_ID=379
+XDG_SESSION_ID=410
 GIT_ROOT=/home/enrique.namigtle/SYNOPSYS_TSMC180GP/Proyectos_UVM/Comparador_RNM_UVM
 USER=enrique.namigtle
 UVM_WORK=/home/enrique.namigtle/SYNOPSYS_TSMC180GP/Proyectos_UVM/Comparador_RNM_UVM/work/uvm
@@ -225,14 +225,14 @@ VSCODE_GIT_ASKPASS_NODE=/home/enrique.namigtle/.vscode-server/cli/servers/Stable
 LC_LIB=/home/EDA/CDS/SYNOPSYS/lc/U-2022.12-SP6/lib
 TERM_PROGRAM=vscode
 HOST=sici4
-SSH_CLIENT=192.168.113.94 59882 22
+SSH_CLIENT=192.168.113.94 49863 22
 TERM_PROGRAM_VERSION=1.103.2
 SELINUX_LEVEL_REQUESTED=
 XDG_DATA_DIRS=/home/enrique.namigtle/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share:/var/lib/snapd/desktop
 SCL_HOME=/home/EDA/CDS/SYNOPSYS/scl/2024.06
 SSL_CERT_FILE=/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem
 CNI_PLAT_ROOT=/home/EDA/PDK/synopsys/TSMC180-1p6m_4X1U40KA-2fF/PycellStudio/lnx_64/plat_linux_gcc411_64
-VSCODE_IPC_HOOK_CLI=/run/user/1009/vscode-ipc-5e7da22a-b124-4782-afd1-c3515baade06.sock
+VSCODE_IPC_HOOK_CLI=/run/user/1009/vscode-ipc-99a71d52-cea2-4d9c-b8f1-86bdb5d380f4.sock
 PDK_TECHFILE=/home/EDA/PDK/synopsys/TSMC180/techfile
 FM_LIB=/home/EDA/CDS/SYNOPSYS/fm/U-2022.12-SP6/lib
 MAIL=/var/spool/mail/enrique.namigtle
@@ -254,7 +254,7 @@ TSMC180_HOME=/home/EDA/PDK/synopsys/TSMC180
 SHLVL=7
 STAR_RC_LIB=/home/EDA/CDS/SYNOPSYS/starrc/W-2024.09-SP5/linux64_starrc/lib
 PYTHONPATH=/home/EDA/PDK/synopsys/TSMC180-1p6m_4X1U40KA-2fF/PycellStudio/lnx_64/pylib:/home/EDA/PDK/synopsys/TSMC180-1p6m_4X1U40KA-2fF/PycellStudio/lnx_64/plat_linux_gcc411_64/lib:.:/home/EDA/PDK/synopsys/TSMC180-1p6m_4X1U40KA-2fF/tsmc18/PyCellCode_tsmc18
-MAKE_TERMERR=/dev/pts/11
+MAKE_TERMERR=/dev/pts/6
 VSCODE_GIT_IPC_HANDLE=/run/user/1009/vscode-git-a601ea90a3.sock
 PRIMEWAVE_LIB=/home/EDA/CDS/SYNOPSYS/primewave/U-2023.03-3-T-20230515/lib
 PDK_DIR=/home/EDA/PDK/synopsys/TSMC180
@@ -268,7 +268,7 @@ GDK_BACKEND=x11
 SSL_CERT_DIR=/etc/pki/tls/certs
 STAR_RC_HOME=/home/EDA/CDS/SYNOPSYS/starrc/W-2024.09-SP5
 LOGNAME=enrique.namigtle
-DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-8tlGrtnuNo,guid=e6cce7a00011fde77f47ceb068b91a54
+DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-rSDDRWzIrD,guid=1df6423f79036ec8c8a294cd68b9d2f3
 GIT_ASKPASS=/home/enrique.namigtle/.vscode-server/cli/servers/Stable-6f17636121051a53c88d3e605c491d22af2ba755/server/extensions/git/dist/askpass.sh
 XDG_RUNTIME_DIR=/run/user/1009
 SYN_HOME=/home/EDA/CDS/SYNOPSYS/syn/U-2022.12-SP7-3
@@ -291,11 +291,11 @@ SPECMAN_OUTPUT_TO_TTY=1
 FLEXLM_BORROWFILE=/home/enrique.namigtle/.sici4-borrow.txt
 Runtime command line arguments:
 argv[0]=./simv
-argv[1]=+ntb_random_seed=3
+argv[1]=+ntb_random_seed=1123
 argv[2]=+UVM_TESTNAME=top_test
 argv[3]=+UVM_VERBOSITY=UVM_DEBUG
 argv[4]=-l
-argv[5]=/home/enrique.namigtle/SYNOPSYS_TSMC180GP/Proyectos_UVM/Comparador_RNM_UVM/work/uvm/logs/2025-09-04_02-41-34_simv.log
+argv[5]=/home/enrique.namigtle/SYNOPSYS_TSMC180GP/Proyectos_UVM/Comparador_RNM_UVM/work/uvm/logs/2025-09-04_12-38-35_simv.log
 argv[6]=+UVM_TR_RECORD
 argv[7]=+UVM_LOG_RECORD
 argv[8]=+UVM_NO_RELNOTES
@@ -304,8 +304,8 @@ argv[10]=-ucli
 argv[11]=-do
 argv[12]=/home/enrique.namigtle/SYNOPSYS_TSMC180GP/Proyectos_UVM/Comparador_RNM_UVM/verification/uvm/run.tcl
 303 profile - 100
-          CPU/Mem usage: 0.030 sys,  0.130 user,  430.88M mem
-304 Elapsed time:    0:00:00    Thu Sep  4 02:41:38 2025
+          CPU/Mem usage: 0.020 sys,  0.130 user,  433.00M mem
+304 Elapsed time:    0:00:00    Thu Sep  4 12:38:39 2025
 305 User CPU time used: 0 seconds
 306 System CPU time used: 0 seconds
 307 pliAppInit
@@ -335,55 +335,55 @@ argv[12]=/home/enrique.namigtle/SYNOPSYS_TSMC180GP/Proyectos_UVM/Comparador_RNM_
 331 *Verdi* : Enable +trace_process and +all dumping.
 332 *Verdi* : End of traversing.
 333 pliAppHDL_DumpVarComplete traverse var: profile - 
-          CPU/Mem usage: 0.030 sys,  0.130 user,  528.34M mem
-                   incr: 0.000 sys,  0.000 user,  5.09M mem
-                   accu: 0.000 sys,  0.000 user,  5.09M mem
-              accu incr: 0.000 sys,  0.000 user,  5.09M mem
+          CPU/Mem usage: 0.030 sys,  0.130 user,  530.46M mem
+                   incr: 0.010 sys,  0.000 user,  5.10M mem
+                   accu: 0.010 sys,  0.000 user,  5.10M mem
+              accu incr: 0.010 sys,  0.000 user,  5.10M mem
 
-          Count usage: 12 var,  12 idcode,  12 callback
-                 incr: 12 var,  12 idcode,  12 callback
-                 accu: 12 var,  12 idcode,  12 callback
-            accu incr: 12 var,  12 idcode,  12 callback
-334 Elapsed time:    0:00:00    Thu Sep  4 02:41:38 2025
+          Count usage: 15 var,  15 idcode,  15 callback
+                 incr: 15 var,  15 idcode,  15 callback
+                 accu: 15 var,  15 idcode,  15 callback
+            accu incr: 15 var,  15 idcode,  15 callback
+334 Elapsed time:    0:00:00    Thu Sep  4 12:38:39 2025
 335 User CPU time used: 0 seconds
 336 System CPU time used: 0 seconds
 337 pliAppHDL_DumpVarComplete: profile - 
-          CPU/Mem usage: 0.030 sys,  0.130 user,  529.39M mem
+          CPU/Mem usage: 0.030 sys,  0.130 user,  531.51M mem
                    incr: 0.000 sys,  0.000 user,  1.05M mem
-                   accu: 0.000 sys,  0.000 user,  6.14M mem
+                   accu: 0.010 sys,  0.000 user,  6.15M mem
               accu incr: 0.000 sys,  0.000 user,  1.05M mem
 
-          Count usage: 12 var,  12 idcode,  12 callback
+          Count usage: 15 var,  15 idcode,  15 callback
                  incr: 0 var,  0 idcode,  0 callback
-                 accu: 12 var,  12 idcode,  12 callback
+                 accu: 15 var,  15 idcode,  15 callback
             accu incr: 0 var,  0 idcode,  0 callback
-338 Elapsed time:    0:00:00    Thu Sep  4 02:41:38 2025
+338 Elapsed time:    0:00:00    Thu Sep  4 12:38:39 2025
 339 User CPU time used: 0 seconds
 340 System CPU time used: 0 seconds
-341 End of simulation at 1450000
-342 Memory usage: 537.944 M
-343 Maximum resident set size: 175 MB
+341 End of simulation at 50950000
+342 Memory usage: 560.632 M
+343 Maximum resident set size: 184 MB
 344 Hard page faults: 1
-345 Soft page faults: 18580
-346 Elapsed time:    0:00:00    Thu Sep  4 02:41:38 2025
+345 Soft page faults: 19906
+346 Elapsed time:    0:00:01    Thu Sep  4 12:38:40 2025
 347 User CPU time used: 0 seconds
 348 System CPU time used: 0 seconds
 349 Begin FSDB profile info:
-350 FSDB Writer : bc1(62) bcn(699) mtf/stf(0/0)
-FSDB Writer elapsed time : flush(0.008176) io wait(0.000000) theadpool wait(0.000000)
+350 FSDB Writer : bc1(2350) bcn(10132) mtf/stf(0/0)
+FSDB Writer elapsed time : flush(0.008720) io wait(0.000000) theadpool wait(0.000000)
 FSDB Writer cpu time : MT Compression : 0
 351 End FSDB profile info
-352 FSDB closed. Name: novas.fsdb Size: 24094
+352 FSDB closed. Name: novas.fsdb Size: 64419
 353 Parallel profile     - ProducerThread:1 ConsumerThread:1 Buffer:64MB
-354                      - BlockUsed:1 Acquire:0 BufferUsed:61192
+354                      - BlockUsed:1 Acquire:0 BufferUsed:602475
 355                      - Flush:4 Expand:0 ProducerWait:0 ConsumerWait:0
-356                      - MainProducerTime:0.233183536 TotalConsumerTime:0.000000000
-357                      - ElapsedTime:0.098720000
-358 Producer   0 profile - BlockUsed:2 Acquire:0 BufferUsed:61192
+356                      - MainProducerTime:0.441044909 TotalConsumerTime:0.000000000
+357                      - ElapsedTime:0.616430000
+358 Producer   0 profile - BlockUsed:3 Acquire:0 BufferUsed:602475
 359 Consumer   0 profile - Affinity:-1 CPUTime:0.000000000 LifeTime:0.000000000 (-nan%)
-360                      - BlockUsed:2 Acquire:0 BufferUsed:61192
+360                      - BlockUsed:3 Acquire:0 BufferUsed:602475
 361 SimExit
-362 Elapsed time:    0:00:00    Thu Sep  4 02:41:38 2025
+362 Elapsed time:    0:00:01    Thu Sep  4 12:38:40 2025
 363 User CPU time used: 0 seconds
 364 System CPU time used: 0 seconds
 365 Sim process exit

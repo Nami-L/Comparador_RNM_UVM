@@ -30,7 +30,7 @@ DPI_DIR     := $(UVM_DIR)/dpi
 # UVM configurations
 TEST ?= top_test
 VERBOSITY ?= UVM_DEBUG
-SEED ?= 3
+SEED ?= 1123
 VCS_DEFINES ?= +define+GIT_DIR=\"$(UVM_DIR)\"
 SIMV_ARGS ?=
 

@@ -13,9 +13,14 @@ class comparador_rnm_uvc_monitor extends uvm_monitor;
 
   //VARIABLES AUXILIARES PARA LAS SALIDAS
 
-  logic                                                 tem_p;
-  logic                                                 tem_n;
-  logic                                                 tem_c;
+// Tener cuidado de que si manejas reales, la comparación debe ser igual real, porque  al hacer la comparación con enteros puede fallar
+//   tem_p = vif.p_i; le asigno un real a un entero, pero si hay una minima variacion en el valor real el entero lo va a detectar como un cambio
+// supongamos que vif.p_i ambia de 0.01 a 0.02 ambos son 1, pero si estaba en cero y pasa a 0.01, el entero lo va a detectar como un cambio
+// por eso tengo mayor cantidad de monitorizaciones y no me pierdo ninguna 
+  real                                                tem_p;
+  real                                                 tem_n;
+  real                                                tem_c;
+  bit                                                tem_c_int;
 
 
 
@@ -54,19 +59,28 @@ endtask : run_phase
 task comparador_rnm_uvc_monitor::do_mon();
 
 
+//localparam real EPSILON = 1e-6;
+
   forever begin
 
     tem_p = vif.p_i;
     tem_n = vif.n_i;
     tem_c = vif.c_o;
+    tem_c_int = vif.c_int_o;
 
     @(vif.cb_drv);
 
-    if ((tem_p != vif.p_i) || (tem_n != vif.n_i) || (tem_c != vif.c_o)) begin
+// if ((tem_p - vif.p_i > EPSILON) || (vif.p_i - tem_p > EPSILON) ||
+//     (tem_n - vif.n_i > EPSILON) || (vif.n_i - tem_n > EPSILON) ||
+//     (tem_c - vif.c_o > EPSILON) || (vif.c_o - tem_c > EPSILON)) begin
+
+    if ((tem_p != vif.p_i) || (tem_n != vif.n_i) || (tem_c != vif.c_o) || tem_c_int != vif.c_int_o) begin
 
       m_trans.m_p_i_real = vif.p_i;
       m_trans.m_n_i_real = vif.n_i;
       m_trans.m_c_o_real = vif.c_o;
+      m_trans.m_c_int_o = vif.c_int_o;
+
 
       m_trans.m_c_o = int'(vif.c_o);
 

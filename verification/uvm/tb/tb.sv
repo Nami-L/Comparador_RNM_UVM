@@ -27,7 +27,8 @@ comparador_rnm_uvc_if comparador_rnm_vif(clk_i);
 comparador_rnm dut(
 .p_i(comparador_rnm_vif.p_i),
 .n_i(comparador_rnm_vif.n_i),
-.c_o(comparador_rnm_vif.c_o)
+.c_o(comparador_rnm_vif.c_o),
+.c_int_o(comparador_rnm_vif.c_int_o)
 
 );
 

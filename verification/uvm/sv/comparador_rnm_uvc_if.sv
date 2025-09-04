@@ -11,7 +11,7 @@ interface comparador_rnm_uvc_if (
   real n_i;
 
   real c_o;
-
+  int c_int_o;
 
 
   //INICIALIZAR VALORES
@@ -36,6 +36,7 @@ interface comparador_rnm_uvc_if (
     default input #1ns output #1ns;
 
     input c_o;
+    input c_int_o;
 
 
   endclocking : cb_mon

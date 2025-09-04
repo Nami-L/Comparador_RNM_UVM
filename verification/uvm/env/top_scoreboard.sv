@@ -50,19 +50,24 @@ task top_scoreboard::run_phase(uvm_phase phase);
 
         //Modelo de referencia: Comparo los valores guardados para p y n en una nueva variable
 
-        bit valor_experado = ((m_comparador_rnm_queue[i].m_p_i >=  m_comparador_rnm_queue[i].m_n_i) ? 1'b1: 1'b0);
+        bit valor_experado = ((m_comparador_rnm_queue[i].m_p_i_real >=  m_comparador_rnm_queue[i].m_n_i_real) ? 1'b1: 1'b0);
 
       // utilizo esa variable para comprobar que es igual a mi salida tambien guardado
       if ((valor_experado === m_comparador_rnm_queue[i].m_c_o)) begin
         m_num_passed++;
-        `uvm_info(get_type_name(), $sformatf("PASS:  (m_p_i=%0b, m_n_i=%0d)",
-                                                   m_comparador_rnm_queue[i].m_p_i,
-                                                   m_comparador_rnm_queue[i].m_n_i), UVM_LOW)
+        `uvm_info(get_type_name(), $sformatf("PASS:  (m_p_i_real=%5f, m_n_i_real=%5f,m_c_o_real=%5f, m_c_o=%5d) expected=%0b",
+                                                   m_comparador_rnm_queue[i].m_p_i_real,
+                                                   m_comparador_rnm_queue[i].m_n_i_real,
+                                                   m_comparador_rnm_queue[i].m_c_o_real,
+                                                   m_comparador_rnm_queue[i].m_c_o,
+                                                   valor_experado), UVM_LOW)
       end else begin
         m_num_failed++;
-                `uvm_info(get_type_name(), $sformatf("FAIL:  (m_p_i=%0b, m_n_i=%0d)",
-                                                   m_comparador_rnm_queue[i].m_p_i,
-                                                   m_comparador_rnm_queue[i].m_n_i), UVM_LOW)
+                `uvm_info(get_type_name(), $sformatf("FAIL:  (m_p_i=%5f, m_n_i=%5f,m_c_o=%5f) expected=%0b",
+                                                   m_comparador_rnm_queue[i].m_p_i_real,
+                                                   m_comparador_rnm_queue[i].m_n_i_real,
+                                                  m_comparador_rnm_queue[i].m_c_o_real,
+                                                   valor_experado), UVM_LOW)
       end
 
       end

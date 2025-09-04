@@ -18,7 +18,7 @@ class comparador_rnm_uvc_sequence_item extends uvm_sequence_item;
   // Readout variables
 
    real m_c_o;
-
+  bit m_c_int_o;
 
   extern function new(string name = "");
 
@@ -35,15 +35,16 @@ function comparador_rnm_uvc_sequence_item::new(string name = "");
 endfunction : new
 //Después de randomizar, convertir a real
 function void comparador_rnm_uvc_sequence_item::post_randomize();
-  m_p_i_real = m_p_i / 100.0;
-  m_n_i_real = m_n_i / 100.0;
+  m_p_i_real = m_p_i / 10.0;
+  m_n_i_real = m_n_i / 10.0;
 endfunction
 //
 function void comparador_rnm_uvc_sequence_item::do_copy(uvm_object rhs);
   // Cuando creo un objeto es un lugar de memoria y si quiero copiarlo necesito
   //agregar memoria
 
-  //Al momento de mandar la transaction es un objeto necesito la copia de ese objeto
+  //Al momento de mandar la transaction es un objeto necesito la copia de ese objeto para poder imprimirlar en la parte de Scoreboard
+  // esto me sirve para comparar los valores esperados con los obtenidos
   comparador_rnm_uvc_sequence_item rhs_;
   if (!$cast(rhs_, rhs)) `uvm_fatal(get_type_name(), "Cast of rhs object failed")
   super.do_copy(rhs);
@@ -52,13 +53,16 @@ function void comparador_rnm_uvc_sequence_item::do_copy(uvm_object rhs);
   m_n_i = rhs_.m_n_i;
   m_p_i_real = rhs_.m_p_i_real;
   m_n_i_real = rhs_.m_n_i_real;
+  m_c_o_real = rhs_.m_c_o_real;
+  m_c_int_o = rhs_.m_c_int_o;
   m_c_o = rhs_.m_c_o;
 
 endfunction : do_copy
-localparam real EPSILON = 1e-6;
+//localparam real EPSILON = 1e-6;
 
 function bit comparador_rnm_uvc_sequence_item::do_compare(uvm_object rhs, uvm_comparer comparer);
-
+ // el do campare es para comparar dos objetos de la misma clase y ver si son iguales o no con el objetivo de ver si la salida es correcta o no
+  // en este caso comparo dos transacciones de la misma clase y veo si son iguales o no y si son iguales la salida es correcta
   bit result;
   comparador_rnm_uvc_sequence_item rhs_;
   if (!$cast(rhs_, rhs)) `uvm_fatal(get_type_name(), "Cast of rhs object failed")
@@ -71,7 +75,9 @@ function bit comparador_rnm_uvc_sequence_item::do_compare(uvm_object rhs, uvm_co
   //result &= ( (m_p_i_real - rhs_.m_p_i_real) <= EPSILON && (rhs_.m_p_i_real - m_p_i_real) <= EPSILON );
   result &= (m_n_i_real == rhs_.m_n_i_real) ;
   result &= (m_p_i_real == rhs_.m_p_i_real);
+  result &= (m_c_o_real == rhs_.m_c_o_real);
   result &= (m_c_o == rhs_.m_c_o);
+  result &= (m_c_int_o == rhs_.m_c_int_o);
   return result;
 
 
