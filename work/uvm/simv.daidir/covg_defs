@@ -1,7 +1,7 @@
 global coverage_group 0 top_env_pkg::top_coverage::m_cov __coverage_top_coverage.m_cov unused_top_coverage_m_cov_loop_label top_env_pkg 0 1 0 0 0  ( 0 
 )
  1 1
- 0 92 /home/enrique.namigtle/Proyectos_UVM/Comparador_RNM_UVM/verification/uvm/env/top_coverage.sv
+ 0 111 /home/enrique.namigtle/SYNOPSYS_TSMC180GP/Proyectos_UVM/Comparador_RNM_UVM/verification/uvm/env/top_coverage.sv
  13 0 0 0 1 0 0 0 0  1
 0
 0 0

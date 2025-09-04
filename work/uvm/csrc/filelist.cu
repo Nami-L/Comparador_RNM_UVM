@@ -4,44 +4,36 @@ ifeq ($(LDVERSION), 0)
 endif
 
 ARCHIVE_OBJS=
-ARCHIVE_OBJS += _1625987_archive_1.so
-_1625987_archive_1.so : archive.0/_1625987_archive_1.a
+ARCHIVE_OBJS += _827396_archive_1.so
+_827396_archive_1.so : archive.14/_827396_archive_1.a
 	@$(AR) -s $<
-	@$(PIC_LD) -shared  -Bsymbolic $(LD_NORELAX_FLAG)  -o .//../simv.daidir//_1625987_archive_1.so --whole-archive $< --no-whole-archive
+	@$(PIC_LD) -shared  -Bsymbolic $(LD_NORELAX_FLAG)  -o .//../simv.daidir//_827396_archive_1.so --whole-archive $< --no-whole-archive
 	@rm -f $@
-	@ln -sf .//../simv.daidir//_1625987_archive_1.so $@
+	@ln -sf .//../simv.daidir//_827396_archive_1.so $@
 
 
-ARCHIVE_OBJS += _1626045_archive_1.so
-_1626045_archive_1.so : archive.0/_1626045_archive_1.a
+ARCHIVE_OBJS += _827457_archive_1.so
+_827457_archive_1.so : archive.14/_827457_archive_1.a
 	@$(AR) -s $<
-	@$(PIC_LD) -shared  -Bsymbolic $(LD_NORELAX_FLAG)  -o .//../simv.daidir//_1626045_archive_1.so --whole-archive $< --no-whole-archive
+	@$(PIC_LD) -shared  -Bsymbolic $(LD_NORELAX_FLAG)  -o .//../simv.daidir//_827457_archive_1.so --whole-archive $< --no-whole-archive
 	@rm -f $@
-	@ln -sf .//../simv.daidir//_1626045_archive_1.so $@
+	@ln -sf .//../simv.daidir//_827457_archive_1.so $@
 
 
-ARCHIVE_OBJS += _1626046_archive_1.so
-_1626046_archive_1.so : archive.0/_1626046_archive_1.a
+ARCHIVE_OBJS += _827459_archive_1.so
+_827459_archive_1.so : archive.14/_827459_archive_1.a
 	@$(AR) -s $<
-	@$(PIC_LD) -shared  -Bsymbolic $(LD_NORELAX_FLAG)  -o .//../simv.daidir//_1626046_archive_1.so --whole-archive $< --no-whole-archive
+	@$(PIC_LD) -shared  -Bsymbolic $(LD_NORELAX_FLAG)  -o .//../simv.daidir//_827459_archive_1.so --whole-archive $< --no-whole-archive
 	@rm -f $@
-	@ln -sf .//../simv.daidir//_1626046_archive_1.so $@
+	@ln -sf .//../simv.daidir//_827459_archive_1.so $@
 
 
-ARCHIVE_OBJS += _1626047_archive_1.so
-_1626047_archive_1.so : archive.0/_1626047_archive_1.a
+ARCHIVE_OBJS += _prev_archive_1.so
+_prev_archive_1.so : archive.14/_prev_archive_1.a
 	@$(AR) -s $<
-	@$(PIC_LD) -shared  -Bsymbolic $(LD_NORELAX_FLAG)  -o .//../simv.daidir//_1626047_archive_1.so --whole-archive $< --no-whole-archive
+	@$(PIC_LD) -shared  -Bsymbolic $(LD_NORELAX_FLAG)  -o .//../simv.daidir//_prev_archive_1.so --whole-archive $< --no-whole-archive
 	@rm -f $@
-	@ln -sf .//../simv.daidir//_1626047_archive_1.so $@
-
-
-ARCHIVE_OBJS += _1626048_archive_1.so
-_1626048_archive_1.so : archive.0/_1626048_archive_1.a
-	@$(AR) -s $<
-	@$(PIC_LD) -shared  -Bsymbolic $(LD_NORELAX_FLAG)  -o .//../simv.daidir//_1626048_archive_1.so --whole-archive $< --no-whole-archive
-	@rm -f $@
-	@ln -sf .//../simv.daidir//_1626048_archive_1.so $@
+	@ln -sf .//../simv.daidir//_prev_archive_1.so $@
 
 
 

@@ -20,7 +20,7 @@ module comparador_rnm(
 always_comb begin
 
 
-    c_o = (p_i > n_i) ? 1.0 : 0.0;
+    c_o = (p_i >= n_i) ? 1.0 : 0.0;
 end
 
 

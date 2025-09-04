@@ -67,9 +67,10 @@ function bit comparador_rnm_uvc_sequence_item::do_compare(uvm_object rhs, uvm_co
   result &= (m_p_i == rhs_.m_p_i);
   result &= (m_n_i == rhs_.m_n_i);
   // Compara reales con tolerancia EPSILON
-  result &= ( (m_n_i_real - rhs_.m_n_i_real) <= EPSILON && (rhs_.m_n_i_real - m_n_i_real) <= EPSILON );
-  result &= ( (m_p_i_real - rhs_.m_p_i_real) <= EPSILON && (rhs_.m_p_i_real - m_p_i_real) <= EPSILON );
-
+  //result &= ( (m_n_i_real - rhs_.m_n_i_real) <= EPSILON && (rhs_.m_n_i_real - m_n_i_real) <= EPSILON );
+  //result &= ( (m_p_i_real - rhs_.m_p_i_real) <= EPSILON && (rhs_.m_p_i_real - m_p_i_real) <= EPSILON );
+  result &= (m_n_i_real == rhs_.m_n_i_real) ;
+  result &= (m_p_i_real == rhs_.m_p_i_real);
   result &= (m_c_o == rhs_.m_c_o);
   return result;
 

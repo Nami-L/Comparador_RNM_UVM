@@ -278,6 +278,14 @@ bScpecifyCellNameCase = False
 bSpecifyPinNameCase = False
 CellNameToCase = 
 PinNameToCase = 
+[InteractiveDebug]
+tbvLocalWatchArrayLimit = 50
+Watch_0 = 150 80 80 0
+Watch_1 = 150 80 80 399
+Watch_2 = 150 80 80 200
+Watch_3 = 150 80 80 200
+Watch_4 = 150 80 80 200
+Watch_5 = 150 80 80 200
 [Language]
 EditWindow_Font = COURIER12
 Background = ID_WHITE
@@ -373,7 +381,10 @@ saveWaveformStat = TRUE
 savePropStat = FALSE
 savePropDtl = TRUE
 [QtDialog]
-QwUserAskDlg = 724,490,324,130
+exportTree_base = 897,542,802,307
+QwWarnMsgDlg = 970,565,600,250
+QwUserAskDlg = 1135,538,324,134
+unknownSave = 1076,528,461,245
 [Relationship]
 hideRecursiceNode = FALSE
 [Safety]
@@ -389,7 +400,7 @@ HighlightSafetyObject = TRUE
 3 = string (session file name)
 4 = string (session file name)
 5 = string (session file name)
-1 = /home/enrique.namigtle/verdiLog/novas_autosave.ses
+1 = /home/enrique.namigtle/SYNOPSYS_TSMC180GP/Proyectos_UVM/Comparador_RNM_UVM/work/uvm/verdiLog/novas_autosave.ses
 [Simulation]
 scsPath = scsim
 scsOption = 
@@ -415,13 +426,15 @@ vcs_mixPath = simv
 vcs_mixOption = -vhdlrun "-vhpi debussy:FSDBDumpCmd"
 scs_mixPath = scsim
 scs_mixOption = -vhpi debussy:FSDBDumpCmd
-interactiveDebugging = {True, False}
-KeepBreakPoints = False
 ScsDebugAll = False
 simType = {vcssv, xl, nc, vcs, mti, mti_vlog, vhnc, scs, mixnc}
 thirdpartyIdx = -1
 iscCmdSep = FALSE
 NoAppendOption = False
+bSVTBMode = TRUE
+SimMode = TRUE
+interactiveDebugging = TRUE
+KeepBreakPoints = FALSE
 [SimulationPlus]
 xlPath = verilog
 xlOption = 
@@ -445,18 +458,24 @@ vcs_mixPath = simv
 vcs_mixOption = -vhdlrun "-vhpi debussy:FSDBDumpCmd"
 scs_mixPath = scsim
 scs_mixOption = -vhpi debussy:FSDBDumpCmd
-vcs_svPath = simv
-vcs_svOption = 
-simType = vcssv
 thirdpartyIdx = -1
-interactiveDebugging = FALSE
-KeepBreakPoints = FALSE
 iscCmdSep = FALSE
 ScsDebugAll = FALSE
 NoAppendOption = FALSE
 invokeSimPath = work
+simType = vcssv
+bSVTBMode = TRUE
+SimMode = TRUE
+interactiveDebugging = TRUE
+KeepBreakPoints = FALSE
+vcs_svPath = ./simv
+uvmAware = TRUE
+smartlog = TRUE
+vcs_svOption = +ntb_random_seed=1 +UVM_TESTNAME=top_test +UVM_VERBOSITY=UVM_DEBUG -l /home/enrique.namigtle/SYNOPSYS_TSMC180GP/Proyectos_UVM/Comparador_RNM_UVM/work/uvm/logs/2025-09-04_02-01-17_simv.log +UVM_TR_RECORD +UVM_LOG_RECORD +UVM_NO_RELNOTES +UVM_VERDI_TRACE=HIE\
+R+RAL+TLM -do /home/enrique.namigtle/SYNOPSYS_TSMC180GP/Proyectos_UVM/Comparador_RNM_UVM/verification/uvm/run.tcl  -sml=verdi
 [SimulationPlus2]
 eventDumpUnfinish = FALSE
+dumpPowerRoot = FALSE
 [Source]
 wordWrapOn = TRUE
 viewReuse = TRUE
@@ -482,11 +501,14 @@ annotateFSMLimitNum = -1
 restoredItemsLimitNum = 100000
 [SourceVHDL]
 vhSimType = ModelSim
-ohSimType = VerilogXL
+ohSimType = VCS
 [TclShell]
 nLineSize = 1024
 [Test]
 verbose_progress = FALSE
+[TestBenchBrowser]
+-showUVMDynamicHierTreeWin = FALSE
+DataViewTooltip = TRUE
 [Text]
 hdlTypeName = blue4
 hdlLibrary = blue4
@@ -570,7 +592,7 @@ pdmlMacro = ID_BLACK
 font = COURIER12
 annotFont = Helvetica_M_R_10
 [Text.1]
-viewport = 446 210 900 700 45
+viewport = 210 14 2194 1230 45
 [TextPrinter]
 Orientation = Landscape
 Indicator = FALSE
@@ -653,6 +675,56 @@ Button2 = "Next 1000 Time" "#1000 $stop;.\n"
 Button1 = "Dump All Signals" "$fsdbDumpvars;\n"
 [VIA]
 viaLogViewerDefaultRuleOneSearchForm = "share/VIA/Apps/PredefinedRules/Misc/Onesearch_rule.rc"
+viaLogViewerDefaultRuleInterForm = "share/VIA/Apps/PredefinedRules/UVM_OVM_i_rule.rc"
+[VIA.interactiveDebug.preference]
+DefaultDisplayTimeUnit = "1.000000ns"
+DefaultLogTimeUnit = "1.000000ns"
+[VIA.interactiveDebug.preference.vgifColumnSettingRC]
+[VIA.interactiveDebug.preference.vgifColumnSettingRC.setting0]
+parRuleSets = "/home/EDA/CDS/SYNOPSYS/verdi/U-2023.03-SP2-9/share/VIA/Apps/PredefinedParRules/par_rule_OVM.rc /home/EDA/CDS/SYNOPSYS/verdi/U-2023.03-SP2-9/share/VIA/Apps/PredefinedParRules/par_rule_UVM.rc /home/EDA/CDS/SYNOPSYS/verdi/U-2023.03-SP2-9/share/VIA/Apps/Prede\
+finedParRules/par_rule_LP.rc /home/EDA/CDS/SYNOPSYS/verdi/U-2023.03-SP2-9/share/VIA/Apps/PredefinedParRules/par_rule_VCS.rc "
+[VIA.interactiveDebug.preference.vgifColumnSettingRC.setting0.column0]
+name = "Block's First Line"
+width = 120
+visualIndex = 1
+isHidden = TRUE
+isUserChangeColumnVisible = FALSE
+[VIA.interactiveDebug.preference.vgifColumnSettingRC.setting0.column1]
+name = "Type"
+width = 60
+visualIndex = 5
+isHidden = TRUE
+isUserChangeColumnVisible = FALSE
+[VIA.interactiveDebug.preference.vgifColumnSettingRC.setting0.column2]
+name = "Message"
+width = 2000
+visualIndex = 6
+isHidden = FALSE
+isUserChangeColumnVisible = FALSE
+[VIA.interactiveDebug.preference.vgifColumnSettingRC.setting0.column3]
+name = "Reporter"
+width = 60
+visualIndex = 3
+isHidden = FALSE
+isUserChangeColumnVisible = FALSE
+[VIA.interactiveDebug.preference.vgifColumnSettingRC.setting0.column4]
+name = "Time"
+width = 60
+visualIndex = 0
+isHidden = FALSE
+isUserChangeColumnVisible = FALSE
+[VIA.interactiveDebug.preference.vgifColumnSettingRC.setting0.column5]
+name = "Code"
+width = 60
+visualIndex = 4
+isHidden = TRUE
+isUserChangeColumnVisible = FALSE
+[VIA.interactiveDebug.preference.vgifColumnSettingRC.setting0.column6]
+name = "Severity"
+width = 60
+visualIndex = 2
+isHidden = FALSE
+isUserChangeColumnVisible = FALSE
 [VIA.oneSearch.preference]
 DefaultDisplayTimeUnit = "1.000000ns"
 DefaultLogTimeUnit = "1.000000ns"
@@ -667,9 +739,9 @@ visualIndex = 2
 isHidden = FALSE
 isUserChangeColumnVisible = FALSE
 [VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column1]
-name = "Type"
-width = 60
-visualIndex = 4
+name = "Block's First Line"
+width = 120
+visualIndex = 1
 isHidden = TRUE
 isUserChangeColumnVisible = FALSE
 [VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column2]
@@ -691,11 +763,13 @@ visualIndex = 3
 isHidden = TRUE
 isUserChangeColumnVisible = FALSE
 [VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column5]
-name = "Block's First Line"
-width = 120
-visualIndex = 1
+name = "Type"
+width = 60
+visualIndex = 4
 isHidden = TRUE
 isUserChangeColumnVisible = FALSE
+[VIA.parRule]
+parRulePathInterForm = ""
 [Vi]
 ViFont = "Clean 14"
 ViBG = white
@@ -777,7 +851,8 @@ AutoApplySeverityColor = TRUE
 scope_to_save_with_macro
 open_file_dir
 open_rc_file_dir
-viewPort = 54 237 960 332 100 65
+getSignalForm = 0 0 800 479 100 30 100 30
+viewPort = 0 25 1457 563 100 65
 legendBackground = -c ID_BLACK
 valueBackground = -c ID_BLACK
 curveBackground = -c ID_BLACK
@@ -943,6 +1018,8 @@ printBasic = 1 0 0 FALSE FALSE
 printDest = -printer {}
 printSignature = {%f %h %t} {}
 curveWindow_Drag&Drop_Mode = TRUE
+RecentFile1 = "\"/home/enrique.namigtle/SYNOPSYS_TSMC180GP/Proyectos_UVM/Comparador_RNM_UVM/work/uvm/inter.fsdb\""
+RecentFile2 = "\"/home/enrique.namigtle/SYNOPSYS_TSMC180GP/Proyectos_UVM/Comparador_RNM_UVM/work/uvm/novas.fsdb\""
 open_file_time_range = FALSE
 legend_window_font = -f COURIER12 -c ID_CYAN5
 value_window_font = -f COURIER12 -c ID_CYAN5
@@ -1313,9 +1390,9 @@ AddImportArgument = FALSE
 LineBreakWithScope = TRUE
 StopAfterCompileOption = -s
 [wave.0]
-viewPort = 50 214 960 332 100 65
+viewPort = 0 25 1457 563 100 65
 [wave.1]
-viewPort = 127 219 960 332 100 65
+viewPort = 0 25 2194 521 100 65
 [wave.2]
 viewPort = 38 314 686 205 100 65
 [wave.3]

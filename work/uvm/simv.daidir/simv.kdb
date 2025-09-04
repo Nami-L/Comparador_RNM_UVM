@@ -1,7 +1,7 @@
 rc file Version 1.0
 
 [Design]
-COMPILE_PATH=/home/enrique.namigtle/Proyectos_UVM/Comparador_RNM_UVM/work/uvm
+COMPILE_PATH=/home/enrique.namigtle/SYNOPSYS_TSMC180GP/Proyectos_UVM/Comparador_RNM_UVM/work/uvm
 VCS_HOME=/home/EDA/CDS/SYNOPSYS/vcs/U-2023.03-SP2-9
 VERDI_HOME=/home/EDA/CDS/SYNOPSYS/verdi/U-2023.03-SP2-9
 SystemC=FALSE
